@@ -9,5 +9,7 @@
 
 this is my job [paynet](https://sam-paynet.uzbek-talim.uz/)
 
-'''bash
+''' bash
+echo hello!
+
 this is 'echo' very interesting linux bash command
