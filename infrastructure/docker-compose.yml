@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    # Map port 8000 on the host to port 8000 in the container
+    ports:
+      - "8000:8000"
+    # Mount the current directory on the host to /app in the container for live updates during development
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+    environment:
+      # Set environment variable to link to the redis service by name
+      REDIS_HOST: redis
+
+  redis:
+    # Use the official Redis image from Docker Hub
+    image: "redis:alpine"
+    restart: always
