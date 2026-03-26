@@ -8,4 +8,6 @@
  and other
 
 this is my job [paynet](https://sam-paynet.uzbek-talim.uz/)
+
+'''bash
 this is 'echo' very interesting linux bash command
